@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
+.wrapper {
+	background: url(pexels-simon-migaj-747964.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.wrap {
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 100vh;
+}
+.navbar {
+	height: 80px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.logo {
+	width: 140px;
+	height: 50%;
+	padding: 20px;
+}
+.navbar ul {
+	float: right;
+	margin-top: 0px;
+}
+.navbar ul li {
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+	padding-bottom: 15px;
+}
+.navbar ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	transition: 0.5s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover {
+	background: red;
+	border-radius: 2px;
+}
+.wrapper .center {
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+.wrap .center {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	padding-left: 200px;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+.center h1 {
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	width: 900px;
+	text-align: center;
+}
+.center h2 {
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	width: 885px;
+	margin-top: 10px;
+	text-align: center;
+}
+.center .buttons {
+	margin: 35px 280px;
+}
+.buttons button {
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffb3b3;
+	background: red;
+	border: 1px solid #cc0000;
+	outline: none;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: 0.5s;
+}
+.buttons .btn {
+	margin-left: 25px;
+}
+.buttons button:hover {
+	background: #cc0000;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	/* min-width: 100%;
+	min-height: 100%; */
+	width: 50%;
+	/* height: 90%; */
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+	position: relative;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.541);
+	color: #f1f1f1;
+	width: 100%;
+	padding: 0px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+	width: 200px;
+	font-size: 18px;
+	padding: 10px;
+	border: none;
+	background: rgba(252, 2, 2, 0.993);
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#myBtn:hover {
+	background: #ddd;
+	color: rgb(255, 1, 1);
+}
+.middle {
+	margin: auto;
+	width: 60%;
+	border: 5px solid #ffff00;
+	padding: 10px;
+}

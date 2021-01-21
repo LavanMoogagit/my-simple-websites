@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video background</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <div>
+        <div>
+            <!-- The video -->
+            <video autoplay unmuted loop id="myVideo">
+                <source src="Time Lapse Video Of Night Sky.mp4" type="video/mp4">
+            </video>
+            
+            <!-- Optional: some overlay text to describe the video -->
+            <div class="content">
+                <h1>Addicted to it.. <code>coding websites for fun</code></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laborum nisi excepturi exercitationem cumque quasi dolor ullam 
+                    earum eos. Unde tenetur ipsum qui ipsam mollitia. Nihil
+                     rerum suscipit architecto sequi doloremque?</p>
+                <!-- Use a button to pause/play the video with JavaScript -->
+                <button id="myBtn" style="margin-left: 500px;" onclick="myFunction()">Pause</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="center">
+            <h1>Welcome To my Website</h1>
+            <h2>Creating Website</h2>
+            <div class="buttons">
+                <button>Explore More</button>
+                <button class="btn">Subscribe Us</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get the video
+        var video = document.getElementById("myVideo");
+        
+        // Get the button
+        var btn = document.getElementById("myBtn");
+        
+        // Pause and play the video, and change the button text
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+        </script>
+ <link rel="javascript" href="./js/script.js">  
+  
+</body>
+</html>
